@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dloyaExamen.Login"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="20,20,20,20">
+            <Label Text="Examen Parcial 1!" HorizontalTextAlignment="Center" FontSize="24"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario: " Grid.Column="0" Grid.Row="0" Style="{StaticResource estiloLabel}"></Label>
+                <Entry x:Name="txtUsuario" Grid.Column="1" Grid.Row="0" />
+
+                <Label Text="Contraseña: " Grid.Column="0" Grid.Row="1" Style="{StaticResource estiloLabel}" ></Label>
+                <Entry x:Name="txtClave" Grid.Column="1" Grid.Row="1" IsPassword="True"/>
+            </Grid>
+            <Button x:Name="btnLogin" Text="Iniciar Sesion" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2" Style="{StaticResource estiloBoton}" Clicked="btnLogin_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

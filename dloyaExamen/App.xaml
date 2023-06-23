@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dloyaExamen.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="estiloLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="Blue"></Setter>
+                <Setter Property="FontSize" Value="18"></Setter>
+            </Style>
+            <Style x:Key="estiloBoton" TargetType="Button">
+                <Setter Property="TextColor" Value="Blue"></Setter>
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="BorderColor" Value="Blue"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
